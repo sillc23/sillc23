@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Tools for Small Businesses Workshop</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .date-info {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .card-content {
+            display: none;
+            margin-top: 1rem;
+        }
+        
+        .card.active .card-content {
+            display: block;
+        }
+        
+        .tool-category {
+            margin-bottom: 3rem;
+        }
+        
+        .resources {
+            background-color: #e9ecef;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .action-items {
+            background-color: #d8f3dc;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .card-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Free AI Tools for Small Businesses</h1>
+            <p class="date-info">Workshop Date: April 3, 2025</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="intro">
+            <h2>Welcome to the Workshop!</h2>
+            <p>This workshop is designed to introduce you to practical, free AI tools that can help small businesses streamline operations, boost productivity, and enhance customer experiences. All without breaking the bank!</p>
+            <p>Click on any category card below to explore the tools we'll be covering.</p>
+        </section>
+        
+        <section id="tools" class="tool-category">
+            <h2>AI Tools by Category</h2>
+            
+            <div class="card-container">
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>Content Creation</h3>
+                    <p>Generate text content for your business needs</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>ChatGPT Free</strong> - Create blog posts, emails, and marketing copy</li>
+                            <li><strong>Canva AI</strong> - Free tier with Magic Write and other AI functions</li>
+                            <li><strong>Gamma</strong> - Create professional presentations with AI assistance</li>
+                            <li><strong>Copy.ai</strong> - Limited free tier for social media content</li>
+                        </ul>
+                        <p>These tools can help you create content 5x faster and overcome writer's block.</p>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>Customer Service</h3>
+                    <p>Enhance your customer interactions</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Tidio</strong> - Free AI chatbot for basic customer queries</li>
+                            <li><strong>Chatsonic</strong> - Conversational AI with personality</li>
+                            <li><strong>HubSpot Chatbot</strong> - Free tier with AI functionality</li>
+                        </ul>
+                        <p>Implement these to handle up to 80% of common customer questions automatically.</p>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>Image Generation</h3>
+                    <p>Create custom visuals for your business</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>DALL-E mini</strong> - Free AI image generation</li>
+                            <li><strong>Canva's Text to Image</strong> - Generate custom graphics</li>
+                            <li><strong>Leonardo.ai</strong> - Limited free tier for AI imagery</li>
+                            <li><strong>Microsoft Designer</strong> - Free AI design tool</li>
+                        </ul>
+                        <p>Create custom product images, social media graphics, and marketing materials in minutes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>Productivity & Admin</h3>
+                    <p>Automate routine tasks and workflows</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Notion AI</strong> - Some free AI features for organization</li>
+                            <li><strong>Zapier</strong> - Free tier for basic automations</li>
+                            <li><strong>Otter.ai</strong> - Limited free transcription</li>
+                            <li><strong>Trello</strong> - With AI assist features</li>
+                        </ul>
+                        <p>Save up to 10 hours weekly by automating repetitive administrative tasks.</p>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>Data Analysis</h3>
+                    <p>Extract insights from your business data</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Google Sheets + Gemini</strong> - Free AI analytics</li>
+                            <li><strong>Tableau Public</strong> - Free data visualization</li>
+                            <li><strong>DBeaver</strong> - Open-source database tool with AI assistance</li>
+                        </ul>
+                        <p>Uncover trends and opportunities hidden in your business data without complex coding.</p>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="this.classList.toggle('active')">
+                    <h3>SEO & Marketing</h3>
+                    <p>Improve your online visibility</p>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Google Search Console</strong> - With AI insights</li>
+                            <li><strong>Ubersuggest</strong> - Limited free keyword research</li>
+                            <li><strong>AnswerThePublic</strong> - Limited free content idea generation</li>
+                            <li><strong>Schema Markup Generator</strong> - Generate structured data</li>
+                        </ul>
+                        <p>Enhance your website's visibility and attract more customers organically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="implementation" class="action-items">
+            <h2>Implementation Action Plan</h2>
+            <p>Follow these steps to implement AI tools in your small business:</p>
+            <ol>
+                <li><strong>Identify Pain Points</strong> - List your top 3 time-consuming tasks</li>
+                <li><strong>Start Small</strong> - Choose 1-2 tools from the categories above</li>
+                <li><strong>Experiment</strong> - Test the tool with real business scenarios</li>
+                <li><strong>Document Results</strong> - Track time saved and quality improvements</li>
+                <li><strong>Scale Gradually</strong> - Add more AI tools based on early wins</li>
+            </ol>
+            <a href="#" class="btn">Download Action Plan Template</a>
+        </section>
+        
+        <section id="resources" class="resources">
+            <h2>Additional Resources</h2>
+            <p>Workshop attendees get access to:</p>
+            <ul>
+                <li>Step-by-step implementation guides for each tool</li>
+                <li>AI prompt templates for different business scenarios</li>
+                <li>30-day AI implementation roadmap for small businesses</li>
+                <li>Access to our community of AI-powered small businesses</li>
+            </ul>
+            <a href="#" class="btn">Access Resources</a>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 AI Workshop for Small Businesses</p>
+            <p>Contact: your-email@example.com</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple toggle for cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Optional: Close other cards when one is opened
+                    // cards.forEach(c => {
+                    //     if (c !== card) c.classList.remove('active');
+                    // });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
